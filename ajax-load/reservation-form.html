@@ -1,0 +1,131 @@
+<div class="modal-header bg-theme-colored">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <h4 class="modal-title text-white" id="myModalLabel">Job Sheet</h4>
+</div>
+<div class="p-40">
+  <!-- Reservation Form Start-->
+    <form id="reservation_form_popup" name="reservation_form" class="reservation-form" method="post" action="includes/sendemail-with-autoresponder.php"><h3 class="mt-0 line-bottom text-theme-colored mb-40">Fill the form<span class="text-theme-colored font-weight-600"> Now!</span></h3>
+      <div class="row">
+	  <div class="col-sm-12">
+           <div class="form-group mb-30">
+            <input placeholder="Brand Name" type="text" id="reservation_brand" name="reservation_brand" required="" class="form-control">
+          </div>
+        </div>
+		<div class="col-sm-6">
+          <div class="form-group mb-30">
+            <input placeholder="Model Name" type="text" id="reservation_model" name="reservation_model" required="" class="form-control">
+          </div>
+        </div>
+		 <div class="col-sm-6">
+          <div class="form-group mb-30">
+            <input placeholder="Mobile Colour" type="text" id="reservation_color" name="reservation_color" required="" class="form-control">
+          </div>
+        </div>
+		<div class="col-sm-12">
+            <div class="form-group mb-20">
+              <label>Please select the services required below</label><br>                      
+              <label class="control control--checkbox">Screen/Display Replacement
+                <input value="Screen/Display Replacement, <br>" type="checkbox"  name="extra_services[]"/>
+                <div class="control__indicator"></div>
+              </label> <br>
+              <label class="control control--checkbox">Battery Replacement 
+                <input value="Battery Replacement,<br>" type="checkbox"  name="extra_services[]"/>
+                <div class="control__indicator"></div>
+              </label> <br>
+              <label class="control control--checkbox">Charging Flex/Strip Replacement 
+                <input value="Charging Flex/Strip Replacement,<br>" type="checkbox" name="extra_services[]"/>
+                <div class="control__indicator"></div>
+              </label> <br>
+              <label class="control control--checkbox">Speaker/Ringer Replacement
+                <input value="Speaker/Ringer Replacement,<br>" type="checkbox" name="extra_services[]"/>
+                <div class="control__indicator"></div>
+              </label> <br>
+              <label class="control control--checkbox">Mic Replacement
+                <input value="Mic Replacement,<br>" type="checkbox" name="extra_services[]"/>
+                <div class="control__indicator"></div>
+              </label> <br>
+              <label class="control control--checkbox">Ear Speaker Replacement
+                <input value="Ear Speaker Replacement,<br>" type="checkbox" name="extra_services[]"/>
+                <div class="control__indicator"></div>
+              </label> <br>
+			  
+			   <label class="control control--checkbox">Front Camera Replacement
+                <input value="Front Camera Replacement,<br>" type="checkbox" name="extra_services[]"/>
+                <div class="control__indicator"></div>
+              </label> <br>
+			   <label class="control control--checkbox">Light & Motion Sensor Replacement 
+                <input value="Light & Motion Sensor Replacement," type="checkbox" name="extra_services[]"/>
+                <div class="control__indicator"></div>
+              </label> <br>
+			   <label class="control control--checkbox">Headphone Jack Replacement
+                <input value="Headphone Jack Replacement,<br>" type="checkbox" name="extra_services[]"/>
+                <div class="control__indicator"></div>
+              </label> <br>
+			   <label class="control control--checkbox">Power Button Replacement
+                <input value="Power Button Replacement,<br>" type="checkbox" name="extra_services[]"/>
+                <div class="control__indicator"></div>
+              </label> <br>
+			   <label class="control control--checkbox">Volume Button Replacement 
+                <input value="Volume Button Replacement,<br>" type="checkbox" name="extra_services[]"/>
+                <div class="control__indicator"></div>
+              </label> <br>
+			   <label class="control control--checkbox">Frame & Housing Replacement
+                <input value="Frame & Housing Replacement,<br>" type="checkbox" name="extra_services[]"/>
+                <div class="control__indicator"></div>
+              </label> <br>
+			   <label class="control control--checkbox">Other Problems - we will contact you to find out more 
+                <input value="Other Problems,<br>" type="checkbox" name="extra_services[]"/>
+                <div class="control__indicator"></div>
+              </label>
+            </div>
+          </div>
+		  
+		  <div class="col-sm-12">
+          <div class="form-group mb-30">
+            <div class="styled-select">
+              <select id="location_select" name="location_select" class="form-control" required="">
+                <option value="Location">- Please select the Location -</option>
+                <option value="Hyderabad">Hyderabad </option>
+                <option value="Banglore">Banglore </option>
+                <option value="Other">Other</option>
+               </select>
+            </div>
+          </div>
+        </div>
+		 
+	 
+        <div class="col-sm-12">
+          <div class="form-group mb-30">
+            <input placeholder="Name" type="text" id="reservation_name" name="reservation_name" required="" class="form-control">
+          </div>
+        </div>
+		 
+		
+		
+        <div class="col-sm-6">
+          <div class="form-group mb-30">
+            <input placeholder="Email" type="text" id="reservation_email" name="reservation_email" class="form-control" required="">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group mb-30">
+            <input placeholder="Contact Number" type="text" id="reservation_phone" name="reservation_phone" class="form-control" required="">
+          </div>
+        </div>
+       
+        
+        <div class="col-sm-12">
+          <div class="form-group mb-0 mt-0">
+            <input name="form_botcheck" class="form-control" type="hidden" value="">
+            <button type="submit" class="btn btn-colored btn-theme-colored btn-lg btn-flat border-left-theme-colored-4px" data-loading-text="Please wait...">Submit Now</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    
+</div>
+<!-- Footer Scripts -->
+<script>
+  //reload date and time picker
+  THEMEMASCOT.initialize.TM_datePicker();
+</script>
